@@ -1,3 +1,5 @@
+Pintasan menyederhanakan Drive Saya … 
+Dalam beberapa minggu mendatang, item yang berada di lebih dari satu folder akan diganti dengan pintasan. Akses ke file dan folder tidak akan berubah.Pelajari lebih lanjut
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dasar HTML_TefaMLG</title>
     <link rel="stylesheet"href="style.css">
+    <script src="js.js"type="text/javascript"></script>
 </head>
 <body>
     <nav>
@@ -39,23 +42,26 @@
         <section id="kontak">
             <br>
             <img src="https://img.freepik.com/free-vector/code-typing-concept-illustration_114360-3866.jpg?t=st=1655442839~exp=1655443439~hmac=17cfb4db0364c40736ffdc8e9e2bfbf1553e63cfff53a241bd26169819f01aa2&w=1060"/>
-            <div class="kolom">
                 <h2>Contact Form</h2>
-                <form action="">
-                    <p>
-                        Nama : <br><br>
-                        <input type="text" name="nama"/><br><br>
-                    </p>
-                    Email : <br><br>
-                    <input type="email" name="email"/><br><br>
-                 </p>
-                 Pesan : <br><br>
-                 <input type="pesan" name="pesan"/><br><br>
-                </p>
-                <input type="submit" name="proses" value="send" />
-                <input type="reset" name="reset" value="reset" />
-            </div>
-        </section>
-    </div>
+
+    <form>
+        <label for="nama">Nama</label><br>
+        <input type="text" id="nama"><br>
+        <br>
+
+        <label for="email">Alamat E-mail</label><br>
+        <input type="text" id="email"><br>
+        <br>
+
+        <label for="pesan">Pesan</label><br>
+        <input type="text" id="pesan"><br>
+        <br>
+
+        <label for="result">Result</label><br>
+        <input type="text" id="result" readonly><br>
+        <br>
+        <button type="button" onclick="cetak()">SUBMIT</button>
+        
+      </form>    
 </body>
 </html>
